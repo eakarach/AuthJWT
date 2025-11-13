@@ -11,4 +11,5 @@ func UserRoutes(routes fiber.Router)  {
 	routes.Get("/:usrId", handles.GetUserProfile)
 	routes.Post("/", handles.CreateUser)
 	routes.Delete("/:usrId", handles.DeleteUser)
+	routes.Put("/:usrId", handles.UpdateUserProfile)
 }

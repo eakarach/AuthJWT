@@ -11,12 +11,17 @@
 The API should now be running on `http://localhost:3000`.
 
 
+## docker
+    docker build -t goapp .
+
 
 ## MOD
 ### fiber
     go get github.com/gofiber/fiber/v2
 ### jwt
     go get -u github.com/golang-jwt/jwt/v5
+### jwtware
+    go get github.com/gofiber/contrib/jwt
 ### bcrypt
     golang.org/x/crypto/bcrypt
 ### gorm
@@ -25,3 +30,4 @@ The API should now be running on `http://localhost:3000`.
     go get gorm.io/driver/sqlserver
 ### go-mssqldb
     go get github.com/microsoft/go-mssqldb
+

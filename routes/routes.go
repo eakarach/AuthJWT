@@ -2,6 +2,7 @@ package routes
 
 import (
 	"github.com/eakarach/AuthJWT/handles"
+	"github.com/eakarach/AuthJWT/middleware"
 
 	"github.com/gofiber/fiber/v2"
 )
@@ -14,5 +15,5 @@ func SetupRoutes(app *fiber.App) {
 	AuthRoutes(api.Group("/auth"))
 
 	// User
-	UserRoutes(api.Group("/usr"))
+	UserRoutes(api.Group("/usr", middleware.Protected()))
 }

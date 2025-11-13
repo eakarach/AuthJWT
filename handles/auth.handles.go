@@ -50,7 +50,6 @@ func Login(c *fiber.Ctx) error {
 			ID:       userModel.ID,
 			Username: userModel.Username,
 			Email:    userModel.Email,
-			Password: userModel.Password,
 		}
 	}
 
